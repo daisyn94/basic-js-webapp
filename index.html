@@ -1,0 +1,31 @@
+<!doctype html>
+<!--
+  Simple Button App
+  - A minimal page with a counter display, an increment button, and a reset button.
+  - `script.js` contains the behavior and is loaded with `defer` so it runs after
+	the HTML is parsed .
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Simple Button App</title>
+</head>
+<body>
+	<!-- App title -->
+	<h1>Click the Button</h1>
+
+	<!-- Counter display: updated by script.js -->
+	<div id="counterDisplay" class="counter">0</div>
+
+	<!-- Controls: increment and reset buttons -->
+	<div class="controls">
+		<button id="btnIncrement" aria-label="Increment counter">Click me</button>
+		<button id="btnReset" class="secondary" aria-label="Reset counter">Reset</button>
+	</div>
+
+	<!-- Load the app script. `defer` ensures the script runs after DOM parsing. -->
+	<script src="script.js" defer></script>
+</body>
+</html>
+
